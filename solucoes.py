@@ -16,6 +16,11 @@ def encontrar_maior_palavra(frase):
     tabela_traducao = str.maketrans(string.punctuation, ' ' * len(string.punctuation))
     frase_sem_pontuacao = frase.translate(tabela_traducao)
 
+    palavras = frase_sem_pontuacao.split()
+    
+    if not palavras:
+        return ""
+
 
 pass
 
