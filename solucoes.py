@@ -19,7 +19,7 @@ def encontrar_maior_palavra(frase):
     palavras = frase_sem_pontuacao.split()
     
     if not palavras:
-        return ""
+        return "String vazias não são aceitas, por favor insira uma palavra!"
     
     maior_palavra = ""
     
