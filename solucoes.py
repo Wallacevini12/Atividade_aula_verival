@@ -12,8 +12,9 @@ def cifra_de_cesar(texto,deslocamento):
 
 
 def encontrar_maior_palavra(frase):
+    caracteres_indesejados = string.punctuation + string.digits
 
-    tabela_traducao = str.maketrans(string.punctuation, ' ' * len(string.punctuation))
+    tabela_traducao = str.maketrans(caracteres_indesejados, ' ' * len(caracteres_indesejados))
     frase_sem_pontuacao = frase.translate(tabela_traducao)
 
     palavras = frase_sem_pontuacao.split()
