@@ -20,6 +20,22 @@ def encontrar_maior_palavra(frase):
     
     if not palavras:
         return ""
+    
+    maior_palavra = ""
+    
+    for palavra in palavras:
+        if len(palavra) > len(maior_palavra):
+            maior_palavra = palavra
+            
+    return maior_palavra
+
+frase_digitada = input("Digite uma frase: ")
+
+resultado = encontrar_maior_palavra(frase_digitada)
+
+print(f"A maior palavra é: {resultado}")
+
+
 
 
 pass
