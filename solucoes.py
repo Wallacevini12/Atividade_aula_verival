@@ -1,3 +1,4 @@
+import string
 def sao_anagramas(string1, string2):
 
   pass
@@ -10,8 +11,12 @@ def cifra_de_cesar(texto,deslocamento):
 
 
 
-def valida_cpf(cpf_string):
+def encontrar_maior_palavra(frase):
 
-  pass
+    tabela_traducao = str.maketrans(string.punctuation, ' ' * len(string.punctuation))
+    frase_sem_pontuacao = frase.translate(tabela_traducao)
+
+
+pass
 
 
